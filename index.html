@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name | Profile</title>
+  <meta name="description" content="Your Name のプロフィールサイト" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0f172a;        /* slate-900 */
+      --card: #020617;      /* slate-950 */
+      --text: #e5e7eb;      /* gray-200 */
+      --muted: #94a3b8;     /* slate-400 */
+      --accent: #38bdf8;    /* sky-400 */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+
+    header {
+      margin-bottom: 64px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      margin-bottom: 56px;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      margin-bottom: 16px;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .card {
+      background: rgba(2, 6, 23, 0.8);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .list {
+      display: grid;
+      gap: 16px;
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .item-meta {
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 640px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Your Name</h1>
+      <p>Graduate Student / Software Engineer / 3DCG & Machine Learning</p>
+    </header>
+
+    <section>
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          大学院でコンピュータグラフィックスやモーション生成、
+          機械学習を用いた研究に取り組んでいます。
+          C++ を中心に、3DCG、VR、データ解析などに興味があります。
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Research / Projects</h2>
+      <div class="list">
+        <div class="card">
+          <div class="item-title">Motion Matching for Character Interaction</div>
+          <div class="item-meta">C++ / Machine Learning / Animation</div>
+          <p>
+            複数キャラクタの相互作用を含むアニメーション生成のための
+            モーション検索・予測手法の研究。
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="item-title">VR Motion Player</div>
+          <div class="item-meta">Unity / VR / C#</div>
+          <p>
+            VR 空間でモーションデータを操作・再生可能な
+            プレイヤーアプリケーションを開発。
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <ul>
+          <li>C / C++ (3DCG, Animation, Native Applications)</li>
+          <li>Python (Machine Learning, Data Analysis)</li>
+          <li>Unity / VR / Motion Capture</li>
+          <li>Git / GitHub / Linux</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Links</h2>
+      <div class="card">
+        <ul>
+          <li><a href="https://github.com/yourname" target="_blank">GitHub</a></li>
+          <li><a href="https://twitter.com/yourname" target="_blank">Twitter / X</a></li>
+          <li><a href="mailto:yourname@example.com">Email</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Your Name
+    </footer>
+  </div>
+</body>
+</html>
